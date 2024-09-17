@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Palette Generator</h1>
+        <div id="app">
+          <div id="inputs">
+            <div class="input">
+              <label for="num-colors-input">Number of Colors:</label>
+              <input type="number" id="num-colors-input" value="5" min="1" max="10">
+            </div>
+            <div class="input">
+              <label for="color-format-input">Color Format:</label>
+              <select id="color-format-input">
+                <option value="hex">HEX</option>
+                <option value="rgb">RGB</option>
+                <option value="hsl">HSL</option>
+              </select>
+            </div>
+            <div class="input">
+              <label for="color-scheme-input">Color Scheme:</label>
+              <select id="color-scheme-input">
+                <option value="random">Random</option>
+                <option value="monochromatic">Monochromatic</option>
+                <option value="analogous">Analogous</option>
+                <option value="complementary">Complementary</option>
+                <option value="split-complementary">Split Complementary</option>
+                <option value="triadic">Triadic</option>
+                <option value="tetradic">Tetradic</option>
+              </select>
+            </div>
+            <button id="generate-btn">Generate</button>
+          </div>
+          <div id="color-palette"></div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
