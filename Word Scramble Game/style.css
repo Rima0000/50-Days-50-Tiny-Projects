@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .dark-mode body {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+  
+  #container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #word {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #guess {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .dark-mode button {
+    background-color: #222;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #333;
+  }
