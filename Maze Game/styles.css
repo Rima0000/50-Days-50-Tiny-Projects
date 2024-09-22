@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 1px;
+    background-color: #eee;
+}
+
+.cell {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.wall {
+    background-color: #000;
+}
+
+.cell.player {
+    background-color: blue;
+}
