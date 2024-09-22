@@ -1,0 +1,86 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .title {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    font-family: "Poppins", sans-serif;
+    background-color: #d173a8;
+    border-radius: 10px;
+  }
+  
+  .container div {
+    margin: 1px 0px;
+  }
+  .draw-container {
+    display: flex;
+    margin: 0;
+  }
+  .draw-container div .player {
+    margin: 30px 40px;
+    font-size: 30px;
+  }
+  
+  html,
+  body {
+    border: none;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ebe8e8;
+  }
+  .result {
+    font-size: 30px;
+    color: #dbdbdb;
+    font-weight: bold;
+  }
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    margin: 0 25px;
+  }
+  .play-btn {
+    background-color: #72d672;
+  }
+  .reset-btn {
+    background-color: #e86168;
+  }
+  
+  .play-btn:hover,
+  .reset-btn:hover {
+    cursor: pointer;
+  }
+  
+  .player {
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #d4d9d4;
+  }
+  
+  .output {
+    text-align: center;
+    color: #82ff82;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
