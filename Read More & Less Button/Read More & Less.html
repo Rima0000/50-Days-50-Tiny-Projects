@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body{
+background: #0c7788;
+font-size: 14px;
+line-height: 22px;
+}
+
+.wrapper{
+width: 500px;
+margin: 50px auto 0;
+background: #fff;
+padding: 30px 40px;
+border-radius: 3px;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+
+.wrapper .title{
+font-weight: 700;
+margin-bottom: 15px;
+font-size: 18px;
+text-align: center;
+}
+
+.wrapper  ul{
+  height: 120px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.wrapper  ul.active{
+height: auto;
+}
+
+.wrapper  ul li{
+margin-bottom: 5px;
+list-style: none;
+position: relative;
+}
+
+.wrapper  ul li:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #bfbfbf;
+}
+
+.wrapper .toggle_btn{
+margin-top: 15px;
+font-weight: 700;
+color: #ffffff;
+cursor: pointer;
+margin-left: 70%;
+font-size: 15px;
+padding: 10px;
+border-radius: 5px;
+background: rgb(204, 12, 79);
+}
+
+.wrapper .toggle_btn.active .fas{
+transform: rotate(180deg);
+}
+  </style>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+  <div class="wrapper">
+      <div class="title">Show More & Show Less Button </div>
+      <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae necessitatibus consequatur quae doloribus eaque quod cumque? Modi, impedit, deserunt pariatur accusantium commodi magnam eos, qui debitis officiis obcaecati ut voluptatum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ex?</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ex?</li>
+          <li>Lorem, ipsum.</li>
+      </ul>
+      <div class="toggle_btn">
+          <span class="toggle_text">Show More</span> <span class="arrow">
+        <i class="fas fa-angle-down"></i>
+        </span>
+      </div>
+  </div>
+  <script type="text/javascript">
+  $(".toggle_btn").click(function(){
+     $(this).toggleClass("active");
+    $(".wrapper ul").toggleClass("active");
+
+    if($(".toggle_btn").hasClass("active")){
+      $(".toggle_text").text("Show Less");
+    }
+    else{
+      $(".toggle_text").text("Show More");
+    }
+  });
+  </script>
+</body>
+</html>
